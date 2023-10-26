@@ -1,1 +1,72 @@
-<p>aprovve-time works!</p>
+<app-toolbar>
+
+    <div class="body">
+
+        <div class="div-form">
+            <mat-toolbar class="title-form">
+                <span>Aprobacion de horas</span>
+                <span class="example-spacer"></span>
+            </mat-toolbar>
+        </div>
+
+        <table class="example-full-width" cellspacing="0">
+            <tr>
+                <td>
+                    <button class="button-options">Pendientes</button>
+                </td>
+                <td>
+                    <button class="button-options">Aprobadas</button>
+                </td>
+                <td>
+                    <button class="button-options">Rechazadas</button>
+                </td>
+            </tr>
+        </table>
+
+        <mat-table [dataSource]="Datos" class="table">
+
+            <!-- Fecha envio -->
+            <ng-container matColumnDef="fechaEnvio">
+                <mat-header-cell *matHeaderCellDef> Fecha envio </mat-header-cell>
+                <mat-cell *matCellDef="let element"> {{element.fechaEnvio}} </mat-cell>
+            </ng-container>
+
+            <!-- Empleado  -->
+            <ng-container matColumnDef="empleado">
+                <mat-header-cell *matHeaderCellDef> Empleado </mat-header-cell>
+                <mat-cell *matCellDef="let element"> {{element.empleado}} </mat-cell>
+            </ng-container>
+
+            <!-- Identificacion  -->
+            <ng-container matColumnDef="identificacion">
+                <mat-header-cell *matHeaderCellDef> Identificacion </mat-header-cell>
+                <mat-cell *matCellDef="let element"> {{element.identificacion}} </mat-cell>
+            </ng-container>
+
+            <!-- Cliente  -->
+            <ng-container matColumnDef="cliente">
+                <mat-header-cell *matHeaderCellDef> Cliente </mat-header-cell>
+                <mat-cell *matCellDef="let element"> {{element.cliente}} </mat-cell>
+            </ng-container>
+
+            <!-- Horas  -->
+            <ng-container matColumnDef="horas">
+                <mat-header-cell *matHeaderCellDef> Horas </mat-header-cell>
+                <mat-cell *matCellDef="let element"> {{element.horas}} </mat-cell>
+            </ng-container>
+
+            <!-- Detalles  -->
+            <ng-container matColumnDef="detalles">
+                <mat-header-cell *matHeaderCellDef> Detalles </mat-header-cell>
+                <mat-cell *matCellDef="let element">
+                    <button class="button-review">{{element.detalles}}</button>
+                </mat-cell>
+            </ng-container>
+
+            <mat-header-row *matHeaderRowDef="columnasAMostrar"></mat-header-row>
+            <mat-row *matRowDef="let row; columns: columnasAMostrar;"></mat-row>
+
+        </mat-table>
+    </div>
+
+</app-toolbar>

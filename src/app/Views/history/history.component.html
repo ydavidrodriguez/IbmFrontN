@@ -1,1 +1,60 @@
-<p>history works!</p>
+<app-toolbar>
+
+    <div class="body">
+
+        <div class="div-form">
+            <mat-toolbar class="title-form">
+                <span>Perfil</span>
+                <span class="example-spacer"></span>
+            </mat-toolbar>
+        </div>
+
+        <em>Encuentra informacion sobre tu reporte .Haz clic en el estado de tu interes para obtener mas detalles</em>
+
+        <mat-table [dataSource]="Datos" class="table">
+
+            <!-- Fecha envio -->
+            <ng-container matColumnDef="fechaEnvio">
+                <mat-header-cell *matHeaderCellDef> Fecha envio </mat-header-cell>
+                <mat-cell *matCellDef="let element"> {{element.fechaEnvio}} </mat-cell>
+            </ng-container>
+
+            <!-- N° Cliente  -->
+            <ng-container matColumnDef="cliente">
+                <mat-header-cell *matHeaderCellDef> N° Cliente </mat-header-cell>
+                <mat-cell *matCellDef="let element"> {{element.cliente}} </mat-cell>
+            </ng-container>
+
+            <!-- N° Reporte  -->
+            <ng-container matColumnDef="reporte">
+                <mat-header-cell *matHeaderCellDef> N° Reporte </mat-header-cell>
+                <mat-cell *matCellDef="let element"> {{element.reporte}} </mat-cell>
+            </ng-container>
+
+            <!-- Aprobador  -->
+            <ng-container matColumnDef="aprobador">
+                <mat-header-cell *matHeaderCellDef> Aprobador </mat-header-cell>
+                <mat-cell *matCellDef="let element"> {{element.aprobador}} </mat-cell>
+            </ng-container>
+
+            <!-- Reporte Horas  -->
+            <ng-container matColumnDef="horas">
+                <mat-header-cell *matHeaderCellDef> Reporte Horas </mat-header-cell>
+                <mat-cell *matCellDef="let element"> {{element.horas}} </mat-cell>
+            </ng-container>
+
+            <!-- Estado  -->
+            <ng-container matColumnDef="estado">
+                <mat-header-cell *matHeaderCellDef> Estado </mat-header-cell>
+                <mat-cell *matCellDef="let element">
+                    <button class="button-stade" >{{element.estado}}</button>
+                </mat-cell>
+            </ng-container>
+
+            <mat-header-row *matHeaderRowDef="columnasAMostrar"></mat-header-row>
+            <mat-row *matRowDef="let row; columns: columnasAMostrar;"></mat-row>
+
+        </mat-table>
+
+    </div>
+</app-toolbar>

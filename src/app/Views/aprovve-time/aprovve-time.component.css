@@ -1,0 +1,55 @@
+.body{
+    padding: 40px;
+}
+
+mat-header-cell {
+    background-color: #0d6efd !important;
+    color: white; 
+}
+
+.title-form{
+    background-color: #0d6efd !important;
+    color: white; 
+    margin-bottom: 10px;
+}
+
+.table{
+    margin-top: 10px;
+}
+
+.button-review {
+    background-color: #4005f2; 
+    padding: 10px 10px;
+    border: none; 
+    color: white; 
+    text-align: center; 
+    text-decoration: none; 
+    border-radius: 10px;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer; 
+  }
+
+  .button-options{
+    text-align: center;
+    width: 80%;
+    background-color: #1f0471; 
+    padding: 20px 20px;
+    border: none; 
+    color: white; 
+    text-align: center; 
+    text-decoration: none; 
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer; 
+  }
+
+.example-full-width{
+    display: flexbox;
+    padding-left: 10%;
+    padding-right: 10%;
+    width: 100%;
+
+}

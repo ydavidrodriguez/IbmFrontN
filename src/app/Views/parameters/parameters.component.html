@@ -1,1 +1,100 @@
-<p>parameters works!</p>
+<app-toolbar>
+    <div class="body">
+        <div class="div-form">
+            <mat-toolbar class="title-form">
+                <span>Parametros</span>
+                <span class="example-spacer"></span>
+            </mat-toolbar>
+        </div>
+
+        <!-- Botones-->
+
+        <table class="example-full-width" cellspacing="0">
+            <tr>
+                <td>
+                    <button class="button-options">Festividades</button>
+                </td>
+                <td>
+                    <button class="button-options">Overtime</button>
+                </td>
+                <td>
+                    <button class="button-options">Stanby</button>
+                </td>
+                <td>
+                    <button class="button-options">Horarios</button>
+                </td>
+            </tr>
+        </table>
+
+        <!-- Campos Formulario-->
+        <div class="field-form">
+            <mat-form-field class="field-width">
+                <mat-label>Pais</mat-label>
+                <input matInput placeholder="Colombia">
+            </mat-form-field>
+
+        </div>
+
+        <div class="field-form">
+            <table class="example-full-width" cellspacing="0">
+                <tr>
+                    <td>
+                        <mat-form-field class="field-width">
+                            <mat-label>Mes</mat-label>
+                            <mat-select>
+                                <mat-option value="one">Octubre</mat-option>
+                                <mat-option value="two">Noviembre</mat-option>
+                                <mat-option value="two">Diciembre</mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                    </td>
+                    <td>
+                        <mat-form-field class="field-width">
+                            <mat-label>Año</mat-label>
+                            <mat-select>
+                                <mat-option value="one">2023</mat-option>
+                                <mat-option value="two">2022</mat-option>
+                                <mat-option value="two">2021</mat-option>
+                            </mat-select>
+                        </mat-form-field>
+
+                    </td>
+                    <td>
+                        <mat-form-field class="field-width">
+                            <mat-label>Dias Habiles</mat-label>
+                            <input matInput placeholder="22">
+                        </mat-form-field>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Calendario y fechas festivos -->
+
+        <div class="calendar-fest">
+            <full-calendar class="calendar" [options]="calendarOptions"></full-calendar>
+
+            <div class="fest">
+                <button class="button-fest">Festivos agregados</button>
+                <ol id="date-list" class="list-fest">
+                    <!-- Las fechas se agregarán aquí -->
+                </ol>
+            </div>
+        </div>
+
+        <table class="example-full-width" cellspacing="0">
+            <tr>
+                <td>
+                    <button class="button-options">Festividades</button>
+                </td>
+                <td>
+                    <button class="button-options">Overtime</button>
+                </td>
+                <td>
+                    <button class="button-options">Stanby</button>
+                </td>
+            </tr>
+        </table>
+
+    </div>
+</app-toolbar>

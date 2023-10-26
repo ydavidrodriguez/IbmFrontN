@@ -51,9 +51,9 @@ body {
 }
 
 label {
-  font-family: Arial, sans-serif; /* Cambia la fuente */
-  color: #333; /* Cambia el color del texto */
-  font-size: 14px; /* Cambia el tamaño de la fuente */
-  font-weight: bold; /* Hace que el texto sea negrita */
+  font-family: Arial, sans-serif; 
+  color: #333; 
+  font-size: 14px; 
+  font-weight: bold; 
   width: 50%;
 }

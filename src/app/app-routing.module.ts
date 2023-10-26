@@ -8,6 +8,9 @@ import { RegisterTimeComponent } from './Views/register-time/register-time.compo
 import { HistoryComponent } from './Views/history/history.component';
 import { AprovveTimeComponent } from './Views/aprovve-time/aprovve-time.component';
 import { ParametersComponent } from './Views/parameters/parameters.component';
+import { RegistersComponent } from './Views/registers/registers.component';
+
+
 const routes: Routes = [
 
 {path:'',redirectTo:'login',pathMatch:'full'},
@@ -18,7 +21,8 @@ const routes: Routes = [
 {path:'resgitertime',component:RegisterTimeComponent},
 {path:'history',component:HistoryComponent},
 {path:'aproveetime',component:AprovveTimeComponent},
-{path:'parameters',component:ParametersComponent}
+{path:'parameters',component:ParametersComponent},
+{path:'registers',component:RegistersComponent}
 
 ];
 
@@ -34,4 +38,5 @@ export const routingComponents = [LoginComponent,
   RegisterTimeComponent,
   HistoryComponent,
   AprovveTimeComponent,
-  ParametersComponent]
+  ParametersComponent,
+  RegistersComponent]

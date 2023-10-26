@@ -6,6 +6,7 @@ import{HttpClientModule} from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material.module';
+import { FullCalendarModule } from '@fullcalendar/angular';
 import{FlexLayoutModule } from '@angular/flex-layout';
 
 @NgModule({
@@ -21,7 +22,8 @@ import{FlexLayoutModule } from '@angular/flex-layout';
     HttpClientModule,
     BrowserAnimationsModule,
     MaterialModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    FullCalendarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
