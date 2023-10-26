@@ -1,1 +1,103 @@
-<p>register-time works!</p>
+<app-toolbar>
+
+    <body>
+        <div class="div-form">
+
+            <form>
+                <div class="container" style="padding-top: 20px; display: flex; justify-content: space-between;">
+                    <!-- Sección 1 -->
+                    <fieldset style="flex: 0.6; margin-right: 10px;">
+                        <legend class="mi-estilo">Datos Personales</legend>
+                        <div class="example-container">
+                            <mat-form-field class="field-width">
+                                <mat-label>ID Usuario</mat-label>
+                                <input matInput placeholder="pat@example.com">
+                            </mat-form-field>
+                        </div>
+                        <div class="example-container">
+                            <mat-form-field class="field-width">
+                                <mat-label>Nombre</mat-label>
+                                <input matInput placeholder="pat@example.com">
+                            </mat-form-field>
+                        </div>
+                        <div class="example-container">
+                            <mat-form-field class="field-width">
+                                <mat-label>Nombre</mat-label>
+                                <input matInput placeholder="pat@example.com">
+                            </mat-form-field>
+                        </div>
+                    </fieldset>
+
+                    <!-- Sección 2 -->
+                    <fieldset style="flex: 1; margin-left: 10px;">
+                        <legend class="mi-estilo">Datos Personales</legend>
+                        <table class="example-full-width" cellspacing="0">
+                            <tr>
+                                <td>
+                                    <mat-form-field class="example-full-width" appearance="fill">
+                                        <mat-label>Fecha</mat-label>
+                                        <input matInput placeholder="alguien@example.com">
+                                    </mat-form-field>
+                                </td>
+                                <td>
+                                    <mat-form-field class="example-full-width" style="margin-left: 10px;">
+                                        <mat-label>Hora Inicio</mat-label>
+                                        <input matInput>
+                                    </mat-form-field>
+                                </td>
+                                <td>
+                                    <mat-form-field class="example-full-width" style="margin-left: 10px;">
+                                        <mat-label>Hora Fin</mat-label>
+                                        <input matInput>
+                                    </mat-form-field>
+                                </td>
+                            </tr>
+                        </table>
+                        <table class="example-full-width" cellspacing="0">
+                            <tr>
+                                <td>
+                                    <mat-form-field class="example-full-width" appearance="fill">
+                                        <mat-label>Reporte N°</mat-label>
+                                        <input matInput placeholder="alguien@example.com">
+                                    </mat-form-field>
+                                </td>
+                                <td>
+                                    <mat-form-field class="example-full-width">
+                                        <mat-label>Cantidad de Horas</mat-label>
+                                        <input matInput>
+                                    </mat-form-field>
+                                </td>
+                            </tr>
+                        </table>
+                        <table class="example-full-width" cellspacing="0">
+                            <tr>
+                                <td>
+                                    <mat-form-field class="example-full-width" appearance="fill">
+                                        <mat-label>Cliente</mat-label>
+                                        <input matInput placeholder="alguien@example.com">
+                                    </mat-form-field>
+                                </td>
+                                <td>
+                                    <mat-form-field class="example-full-width" style="margin-left: 10px;">
+                                        <mat-label>Codigo Cliente</mat-label>
+                                        <input matInput>
+                                    </mat-form-field>
+                                </td>
+                                <td>
+                                    <mat-form-field class="example-full-width" style="margin-left: 10px;">
+                                        <mat-label>Actividad</mat-label>
+                                        <input matInput>
+                                    </mat-form-field>
+                                </td>
+                            </tr>
+                        </table>
+                    </fieldset>
+                </div>
+
+                <div style="text-align: right; padding-top: 10px;">
+                    <button mat-raised-button color="primary">GUARDAR CAMBIOS</button>
+                </div>
+            </form>
+        </div>
+    </body>
+</app-toolbar>
