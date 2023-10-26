@@ -1,8 +1,79 @@
 <app-toolbar>
-<div>
-    <legend class="mi-estilo">Datos Personales</legend>
-</div>
-<em>Filtrar por:</em>
-<hr>
+    <div class="body">
+        <div>
+            <legend class="mi-estilo">Datos Personales</legend>
+        </div>
+        <em class="filter-text">Filtrar por:</em>
+        <hr class="filter-divider">
+        <table class="example-full-width" cellspacing="0">
+            <tr>
+                <td>
+                    <mat-form-field class="field-width" appearance="fill">
+                        <mat-label> Cargo: </mat-label>
+                        <mat-select>
+                            <mat-option value="one">Empleado</mat-option>
+                            <mat-option value="two">Aprobador</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                </td>
+                <td>
+                    <mat-form-field class="field-width">
+                        <mat-label> ID Usuario </mat-label>
+                        <input matInput placeholder="c2523255">
+                    </mat-form-field>
+                </td>
+            </tr>
+        </table>
 
+        <mat-table [dataSource]="Datos" class="table">
+
+            <!-- Nombre-->
+            <ng-container matColumnDef="nombre">
+                <mat-header-cell *matHeaderCellDef> Nombre </mat-header-cell>
+                <mat-cell *matCellDef="let element"> {{element.nombre}} </mat-cell>
+            </ng-container>
+
+            <!-- ID Usuario  -->
+            <ng-container matColumnDef="idUsuario">
+                <mat-header-cell *matHeaderCellDef> ID Usuario </mat-header-cell>
+                <mat-cell *matCellDef="let element"> {{element.idUsuario}} </mat-cell>
+            </ng-container>
+
+            <!--  cliente -->
+            <ng-container matColumnDef="cliente">
+                <mat-header-cell *matHeaderCellDef> Cliente </mat-header-cell>
+                <mat-cell *matCellDef="let element"> {{element.cliente}} </mat-cell>
+            </ng-container>
+
+            <!-- N° Reporte  -->
+            <ng-container matColumnDef="reporte">
+                <mat-header-cell *matHeaderCellDef> N° Reporte </mat-header-cell>
+                <mat-cell *matCellDef="let element"> {{element.reporte}} </mat-cell>
+            </ng-container>
+
+            <!-- correo  -->
+            <ng-container matColumnDef="correo">
+                <mat-header-cell *matHeaderCellDef> Correo </mat-header-cell>
+                <mat-cell *matCellDef="let element"> {{element.correo}} </mat-cell>
+            </ng-container>
+
+            <!-- cargo  -->
+            <ng-container matColumnDef="cargo">
+                <mat-header-cell *matHeaderCellDef> Cargo </mat-header-cell>
+                <mat-cell *matCellDef="let element"> {{element.cargo}} </mat-cell>
+            </ng-container>
+
+            <!-- editar  -->
+            <ng-container matColumnDef="editar">
+                <mat-header-cell *matHeaderCellDef> Editar </mat-header-cell>
+                <mat-cell *matCellDef="let element">
+                    <a href="">{{element.editar}}</a>
+                </mat-cell>
+            </ng-container>
+
+            <mat-header-row *matHeaderRowDef="columnasAMostrar"></mat-header-row>
+            <mat-row *matRowDef="let row; columns: columnasAMostrar;"></mat-row>
+
+        </mat-table>
+    </div>
 </app-toolbar>
