@@ -19,6 +19,20 @@ mat-header-cell {
 
 .button-stade {
     background-color: #4CAF50; 
+    padding: 10px 10px !important;
+    border: none; 
+    color: white !important; 
+    text-align: center !important; 
+    text-decoration: none !important; 
+    border-radius: 10px ;
+    display: inline-block !important ;
+    font-size: 16px !important;
+    margin: 4px 2px !important;
+    cursor: pointer; 
+  }
+
+  .button-review {
+    background-color: #4005f2; 
     padding: 10px 10px;
     border: none; 
     color: white; 

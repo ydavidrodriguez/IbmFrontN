@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { PopupHistoryComponent } from '../popup-history/popup-history.component';
+import { MatDialog } from '@angular/material/dialog';
 
 
 
@@ -15,4 +17,11 @@ export class HistoryComponent {
   ];
 
   columnasAMostrar = ['fechaEnvio', 'cliente', 'reporte', 'aprobador', 'horas', 'estado'];
+
+  constructor(public dialog: MatDialog) {}
+
+  openDialog() {
+    this.dialog.open(PopupHistoryComponent);
+  }
+
 }

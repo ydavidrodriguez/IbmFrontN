@@ -6,6 +6,7 @@
 
 .example-full-width {
     width: 100%;
+    margin-top: 20px;
 }
 
 .field-width{
@@ -19,7 +20,6 @@
 }
 
 .button-options {
-    text-align: center;
     width: 100%;
     background-color: #1f0471;
     padding: 30px 20px;
@@ -33,14 +33,34 @@
     cursor: pointer;
 }
 
+.button-update{
+    width: 30%;
+    background-color: #0d6efd !important;
+    border: none;
+    color: white !important;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 20px 2px;
+    cursor: pointer;
+}
+
 .calendar {
     width: 60%;
     height: 20%;
     margin: 10px;
 }
 
-.field-form {
-    margin: 10px;
+.field-form-p {
+    margin-top: 10px;
+    width: 90%;
+}
+
+.field-form-h {
+    margin-top: 10px;
+    margin-left: 20px;
+    width: 100%;
 }
 
 .body {
@@ -80,4 +100,16 @@
     padding: 20px;
     border-radius: 5px;
     height: 80%;
+}
+
+.table{
+    margin-top: 10px;
+    width: 50%;
+}
+
+.table-h{
+    border: none;
+    margin-top: 10px;
+    margin-right: 20px;
+    width: 100%;
 }

@@ -9,6 +9,8 @@ import { HistoryComponent } from './Views/history/history.component';
 import { AprovveTimeComponent } from './Views/aprovve-time/aprovve-time.component';
 import { ParametersComponent } from './Views/parameters/parameters.component';
 import { RegistersComponent } from './Views/registers/registers.component';
+import { ProfilesComponent } from './Views/profiles/profiles.component';
+import { PopupHistoryComponent } from './Views/popup-history/popup-history.component';
 
 
 const routes: Routes = [
@@ -22,7 +24,8 @@ const routes: Routes = [
 {path:'history',component:HistoryComponent},
 {path:'aproveetime',component:AprovveTimeComponent},
 {path:'parameters',component:ParametersComponent},
-{path:'registers',component:RegistersComponent}
+{path:'registers',component:RegistersComponent},
+{path:'profiles',component:ProfilesComponent}
 
 ];
 
@@ -39,4 +42,6 @@ export const routingComponents = [LoginComponent,
   HistoryComponent,
   AprovveTimeComponent,
   ParametersComponent,
-  RegistersComponent]
+  RegistersComponent,
+  ProfilesComponent,
+PopupHistoryComponent]

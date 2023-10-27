@@ -47,7 +47,7 @@
             <ng-container matColumnDef="estado">
                 <mat-header-cell *matHeaderCellDef> Estado </mat-header-cell>
                 <mat-cell *matCellDef="let element">
-                    <button class="button-stade" >{{element.estado}}</button>
+                    <button mat-button class="button-stade" (click)="openDialog()">{{element.estado}}</button>
                 </mat-cell>
             </ng-container>
 

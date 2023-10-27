@@ -1,0 +1,55 @@
+<div style="width: 500px; height: 500px; padding: 40px;">
+    <article>
+        <b>Actividad:</b> standby
+        <br>
+        <b>Fecha de envio:</b> 14/09/23
+        <br>
+        <b>N° Reporte:</b> 0000
+        <br>
+        <b>Reporte de horas:</b> 00
+        <br>
+        <b>Cliente:</b> Algartech
+        <br>
+        <b> Codigo Cliente: </b> 00000
+        <br>
+    </article>
+
+    <div style="margin: 20px;">
+        <mat-table [dataSource]="Datos">
+
+            <ng-container matColumnDef="aprobador1">
+                <mat-header-cell *matHeaderCellDef> Aprobador 1 </mat-header-cell>
+                <mat-cell *matCellDef="let element"> {{element.aprobador1}} </mat-cell>
+            </ng-container>
+
+            <ng-container matColumnDef="aprobador2">
+                <mat-header-cell *matHeaderCellDef> Aprobador 2 </mat-header-cell>
+                <mat-cell *matCellDef="let element"> {{element.aprobador2}} </mat-cell>
+            </ng-container>
+
+            <!-- Estado  -->
+            <ng-container matColumnDef="estado">
+                <mat-header-cell *matHeaderCellDef> Estado </mat-header-cell>
+                <mat-cell *matCellDef="let element">
+                    <button mat-button class="button-stade">{{element.estado}}</button>
+                </mat-cell>
+            </ng-container>
+
+            <mat-header-row *matHeaderRowDef="columnasAMostrar"></mat-header-row>
+            <mat-row *matRowDef="let row; columns: columnasAMostrar;"></mat-row>
+
+        </mat-table>
+    </div>
+
+    <p>
+        <b>Observaciones</b>
+        <br>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores blanditiis a libero sunt illum quo, consequuntur exercitationem in error autem cum adipisci voluptas culpa reiciendis provident dicta. Consequuntur, dolore magnam.
+    </p>
+
+
+    <div style="text-align: center;">
+        <button mat-button (click)="onClose()"  class="button-close"> Cerrar </button>
+    </div>
+
+</div>

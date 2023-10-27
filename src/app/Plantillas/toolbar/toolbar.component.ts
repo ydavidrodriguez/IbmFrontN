@@ -34,11 +34,11 @@ export class ToolbarComponent {
   }
   Redireccion5(){
     console.log("entro");
-    this.router.navigate(['user'])
+    this.router.navigate(['profiles'])
   }
   Redireccion6(){
     console.log("entro");
-    this.router.navigate(['user'])
+    this.router.navigate(['registers'])
   }
 
 }
